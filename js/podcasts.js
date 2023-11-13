@@ -13,7 +13,7 @@ const podcastsData = [
     {
       name: "Blick: Pro und Konter",
       link: "https://podcasts.apple.com/ch/podcast/blick-pro-und-konter/id1438611005",
-      info: "Bei «Pro und Konter» diskutieren wöchentlich die beiden Blick-Sportredaktoren Emanuel Gisi und Dino Kessler über das Spannendste aus der Welt des Sports. Hinweis der Redaktion: Bei Kessler handelt es sich im übrigen tatsächlich um den ehemaligen Bündner Hockey-Profi.<br/><br/>Produktion: Carlo Lardi",
+      info: "Bei «Pro und Konter» diskutieren wöchentlich die beiden Blick-Sportredaktoren Emanuel Gisi und Dino Kessler über das Spannendste aus der Welt des Sports. Hinweis der Redaktion: Bei Kessler handelt es sich im übrigen tatsächlich um den ehemaligen Bündner Hockey-Profi.",
       thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/59/f2/90/59f290a7-6367-c6b1-369c-1fecb29b5895/mza_17132771826203359250.jpg/626x0w.jpg",
       verlag: "Blick",
       dauer: "60 min",
@@ -98,17 +98,6 @@ const podcastsData = [
       art: "Episodisch",
       letzte: "25. Oktober 2023"
     },
-    // {
-    //   name: "Weltwoche Daily",
-    //   link: "https://podcasts.apple.com/ch/podcast/weltwoche-daily/id1622583996",
-    //   info: "«Weltwoche Daily» – jetzt als Podcast für unterwegs. Steigen Sie ein, hören Sie mit! www.weltwoche.ch<br/> Hosted on Acast. See acast.com/privacy for more information.",
-    //   thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/4a/b5/37/4ab5374a-2be5-2149-dcb5-82bc2f3b4656/mza_13640473163607749169.jpg/626x0w.jpg",
-    //   verlag: "Weltwoche",
-    //   dauer: "",
-    //   thema: "Nachrichten",
-    //   art: "Episodisch",
-    //   letzte: "28. Oktober 2023"
-    // },
     {
       name: "Anderi Liga",
       link: "https://podcasts.apple.com/ch/podcast/anderi-liga/id1616890092",
@@ -274,28 +263,6 @@ const podcastsData = [
       art: "Episodisch",
       letzte: "27. April 2023"
     },
-    // {
-    //   name: "Wochenrevue",
-    //   link: "https://podcasts.apple.com/ch/podcast/wochenrevue/id1501718668",
-    //   info: "Hören Sie jeden Samstag in weniger als 10 min, was in der Republik los war. Wir stellen ausgewählte Beiträge der Woche vor mit Stimmen aus der Autorenschaft. Und reflektieren unsere Arbeit mit lobenden und kritischen Beiträgen aus dem Dialog. Ideal während des Kochens, beim Zugfahren oder Flanieren.",
-    //   thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/59/d4/77/59d47765-300f-bae1-37c6-8324925b5844/mza_4719432935541829801.png/626x0w.png",
-    //   verlag: "Republik",
-    //   dauer: "15 min",
-    //   thema: "Gesellschaft",
-    //   art: "Episodisch",
-    //   letzte: "31. Juli 2020"
-    // },
-    // {
-    //   name: "Im Gespräch",
-    //   link: "https://podcasts.apple.com/ch/podcast/im-gespr%C3%A4ch/id1521017219",
-    //   info: "Der Publizist und Autor Roger de Weck lädt für die Republik wieder Gäste aus Politik, Gesellschaft, Kultur und Wirtschaft zur Debatte. Diesmal zum Hören.",
-    //   thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/40/1a/58/401a58d1-dd6d-9b29-1e77-5292544df191/mza_15110919916652719800.png/626x0w.png",
-    //   verlag: "Roger de Weck, Republik",
-    //   dauer: "60 min",
-    //   thema: "Philosophie",
-    //   art: "Episodisch",
-    //   letzte: "17. April 2022"
-    // },
     {
       name: "Mord im Männermilieu",
       link: "https://podcasts.apple.com/ch/podcast/mord-im-m%C3%A4nnermilieu/id1603878562",
@@ -340,17 +307,6 @@ const podcastsData = [
       art: "Seriell",
       letzte: "23. November 2019"
     },
-    // {
-    //   name: "Republik Tech-Podcast",
-    //   link: "https://podcasts.apple.com/ch/podcast/republik-tech-podcast/id1483436184",
-    //   info: "Dieser Podcast ist für alle, die sich kritisch mit der Digitalisierung auseinandersetzen wollen. Hier verhandeln wir netzpolitische Themen, machen kleine Faktenchecks und präsentieren auch eigene Recherchen. Mit Adrienne Fichter und Nicolas Zahn.",
-    //   thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/10/a9/e4/10a9e413-9af3-5cc2-3180-7fd5d7c26f69/mza_3285302882857969590.jpg/626x0w.jpg",
-    //   verlag: "Republik",
-    //   dauer: "30 min",
-    //   thema: "Technologie",
-    //   art: "Episodisch",
-    //   letzte: "21. April 2020"
-    // },
     {
       name: "Hinter der Schlagzeile",
       link: "https://podcasts.apple.com/ch/podcast/hinter-der-schlagzeile/id1691141431",
@@ -483,17 +439,6 @@ const podcastsData = [
       art: "Episodisch",
       letzte: "26. Oktober 2023"
     },
-    // {
-    //   name: "Schöne neue Arbeitswelt",
-    //   link: "https://podcasts.apple.com/ch/podcast/sch%C3%B6ne-neue-arbeitswelt/id1457163480",
-    //   info: "Ein Blick auf die Wirtschaft von morgen. Wie Technologien, neue Arbeitsformen und Denkweisen die Welt verändern. Dieser Podcast pausiert zurzeit.<br/> Hosted on Acast. See acast.com/privacy for more information.",
-    //   thumbnail: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/3c/f0/04/3cf00487-010e-53de-b579-5eea92178dc8/mza_8995801297991647260.jpeg/626x0w.jpg",
-    //   verlag: "Ringier Axel Springer",
-    //   dauer: "30 min",
-    //   thema: "Wirtschaft",
-    //   art: "Episodisch",
-    //   letzte: "19. März 2019"
-    // },
     {
       name: "Handelszeitung Morning Call",
       link: "https://podcasts.apple.com/ch/podcast/handelszeitung-morning-call/id1664399746",

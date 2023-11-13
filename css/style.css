@@ -18,7 +18,7 @@ header {
     padding: 30px;
     background-color: white;
     height: 100%;
-    width: 400px; /* Set a minimum width for the fixed header */
+    width: 400px;
     overflow: scroll;
 }
 
@@ -37,8 +37,6 @@ h1 {
     color: white;
     border: none 1.5px rgb(0, 0, 0);
     border-radius: 0px;
-    /* outline: none; */
-    /* margin: 15px 0 5px 0; */
     padding: 10px 14px 8px 14px;
     background-color: #a82424;
     cursor: pointer;
@@ -56,7 +54,6 @@ h1 {
 
 .filter-category {
     display: flex;
-    /* text-align: center; */
     flex-direction: column;
     margin-top: 30px;
 }
@@ -72,7 +69,6 @@ h1 {
     color: black;
     border: none 1.5px rgb(0, 0, 0);
     border-radius: 0px;
-    /* outline: none; */
     margin: 5px 10px 5px 0;
     padding: 8px 12px 6px 12px;
     background-color: #dadada;
@@ -85,11 +81,6 @@ h1 {
     font-size: 0.95rem;    
 }
 
-/* .filter:hover {
-    background-color: #ff9393;
-    border: solid 1.5px rgb(0, 0, 0);
-} */
-
 .filter.active {
     background-color: #ff9393;
 }
@@ -97,9 +88,8 @@ h1 {
 
 .main-container {
     flex: 1;
-    overflow-y: auto; /* Enable vertical scrolling for the main content */
-    /* padding: 20px; */
-    background-color: #2c302f; /* Match the background color of the body */
+    overflow-y: auto;
+    background-color: #2c302f;
 }
 
 main {
@@ -113,30 +103,6 @@ margin-left: 400px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-}
-
-.sort-div {
-    display: flex;
-}
-
-.sort-button {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    border: solid 1.5px;
-    border-radius: 30px;
-    /* outline: none; */
-    margin: 20px 20px 20px 0px;
-    padding: 7.5px 5px 5px 5px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 0.8rem;
-    height: 30px;
-    width: 50px;
-
 }
 
 .portfolio {
@@ -169,7 +135,6 @@ margin-left: 400px;
 }
 
 .info {
-    /* padding-bottom: 20px; */
     margin-bottom: 20px;
 }
 
@@ -192,28 +157,10 @@ margin-left: 400px;
     color: white;
 }
 
-/* .collapsible.active {
-    background-color: #a07f7f;
-} */
-
-/* .collapsible-content.active {
-    display: block;
-} */
-
-/* .collapsible {
-    display: block;
-    border: none;
-    outline: none;
-    margin: 5px;
-    padding: 12px 16px;
-    background-color: #e5abab;
-    cursor: pointer;
-} */
 
 @media screen and (min-width: 769px) {
     .filter:hover {
         background-color: #ff9393;
-        /* border: solid 1.5px rgb(0, 0, 0); */
     }
 
     .link:hover {
@@ -250,8 +197,6 @@ margin-left: 400px;
         font-size: 1.5rem;
         margin-top: 2px;
         flex-wrap: wrap;
-        /* text-decoration: underline;
-        text-underline-offset: 5px; */
     }
 
   }
