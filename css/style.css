@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Overpass, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #2c302f;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    height: 100%;
+    width: 400px; /* Set a minimum width for the fixed header */
+    overflow: scroll;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse-filters {
+    display: none;
+    color: white;
+    border: none 1.5px rgb(0, 0, 0);
+    border-radius: 0px;
+    /* outline: none; */
+    /* margin: 15px 0 5px 0; */
+    padding: 10px 14px 8px 14px;
+    background-color: #a82424;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.button-div {
+    margin-left: 30px; 
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-category {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter {
+    display: block;
+    color: black;
+    border: none 1.5px rgb(0, 0, 0);
+    border-radius: 0px;
+    /* outline: none; */
+    margin: 5px 10px 5px 0;
+    padding: 10px 14px 8px 14px;
+    background-color: #dadada;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.filter-h3 {
+    margin-bottom: 2.5px;
+    font-size: 0.95rem;    
+}
+
+/* .filter:hover {
+    background-color: #ff9393;
+    border: solid 1.5px rgb(0, 0, 0);
+} */
+
+.filter.active {
+    background-color: #ff9393;
+}
+
+
+.main-container {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling for the main content */
+    /* padding: 20px; */
+    background-color: #2c302f; /* Match the background color of the body */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+margin-left: 400px;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sort-div {
+    display: flex;
+}
+
+.sort-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: solid 1.5px;
+    border-radius: 30px;
+    /* outline: none; */
+    margin: 20px 20px 20px 0px;
+    padding: 7.5px 5px 5px 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 0.8rem;
+    height: 30px;
+    width: 50px;
+
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 20px 20px 20px;
+}
+
+.item {
+    margin: 20px;
+    max-width: 280px;
+    font-size: 0.9rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 0px;
+
+}
+
+.thumbnail:hover {
+    border: solid white 3px;
+}
+
+.name {
+    padding-bottom: 10px;
+}
+
+.info {
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+}
+
+.link {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #a82424;
+    padding: 10px;
+    text-decoration: none;
+    padding: 10px 14px 8px 14px;
+}
+
+.collapsible-content {
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    font-weight: 200;
+    color: white;
+}
+
+/* .collapsible.active {
+    background-color: #a07f7f;
+} */
+
+/* .collapsible-content.active {
+    display: block;
+} */
+
+/* .collapsible {
+    display: block;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 12px 16px;
+    background-color: #e5abab;
+    cursor: pointer;
+} */
+
+@media screen and (min-width: 769px) {
+    .filter:hover {
+        background-color: #ff9393;
+        /* border: solid 1.5px rgb(0, 0, 0); */
+    }
+
+    .link:hover {
+        background-color: #741818;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        width: auto;
+        position: sticky;
+        top: 0;
+        padding: 30px 30px 25px 30px;
+    }
+
+    .collapse-filters {
+        display: block;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .filters {
+        display: none;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 1.5rem;
+        margin-top: 2px;
+        flex-wrap: wrap;
+    }
+
+  }
+
+
+  @media screen and (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 6px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+    h1 {
+        padding-bottom: 10px;
+    }
+  }
