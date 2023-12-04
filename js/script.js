@@ -4,6 +4,7 @@ let ascendingOrder = true;
 
 sortItemsByName();
 
+// Podcasts und Infos anzeigen
 function initializeItems() {
     portfolio.innerHTML = '';
         podcastsData.forEach(item => {
@@ -62,16 +63,16 @@ function initializeItems() {
 
 initializeItems();
 
+// Alphabetisch sortieren
 function sortItemsByName() {
     if (ascendingOrder) {
         podcastsData.sort((a, b) => a.name.localeCompare(b.name));
     } else {
         podcastsData.sort((a, b) => b.name.localeCompare(a.name));
     }
-    initializeItems();
 }
 
-
+// Eindeutige Details sammeln
 function getUniqueValues(data, category) {
     const uniqueValues = new Set();
     data.forEach(podcast => {
@@ -83,6 +84,7 @@ function getUniqueValues(data, category) {
     return Array.from(uniqueValues);
   }
 
+// Filter-Buttons erstellen
 function generateFilterButtons(category, uniqueValues) {
   const filterCategory = document.querySelector(`.filter-category[data-category="${category}"] .filter-buttons`);
   const sortedValues = uniqueValues.sort();
@@ -97,6 +99,7 @@ function generateFilterButtons(category, uniqueValues) {
   });
 }
   
+// Event-Listener zu Filter-Buttons hinzufügen
 function attachFilterButtonListeners() {
   const filterButtons = document.querySelectorAll('.filter');
   filterButtons.forEach(button => {
@@ -118,7 +121,8 @@ generateFilterButtons('art', uniqueArtValues);
 generateFilterButtons('dauer', uniqueDauerValues);
 
 attachFilterButtonListeners();
-  
+
+// Podcasts filtern nach gedrückten Filter-Buttons
 function filterItems() {
   const filters = document.querySelectorAll('.filter');
   const activeFilters = Array.from(filters).filter(f => f.classList.contains('active'));
@@ -140,6 +144,7 @@ function filterItems() {
 const collapseFilters = document.querySelector('.collapse-filters');
 const filterMenu = document.querySelector('.filters');
 
+// Filter ein- und ausblenden mit Button
 function filtersVisible() {
   collapseFilters.addEventListener('click', () => {
       filterMenu.style.display = filterMenu.style.display === 'block' ? 'none' : 'block';
@@ -149,6 +154,7 @@ function filtersVisible() {
 
 filtersVisible();
 
+// Filter automatisch einblenden, wenn Fenstergrösse mind. 769px
 window.addEventListener("resize", function() {
   if (window.matchMedia("(min-width: 769px)").matches) {
     filterMenu.style.display = 'block';
