@@ -1,5 +1,5 @@
 # IM 5 – Projekt
-[Hier](https://734301-5.web.fhgr.ch) geht's zum lauffähigen Projekt.
+[Hier](https://734301-6.web.fhgr.ch) geht's zum lauffähigen Projekt.
 
 ## Filter-Funktion
 Am Ursprung stand die Idee, eine Art Podcast-Katalog zu erstellen, der filterbar ist. Mit dieser Idee machte ich mich auf die Suche nach Beispielen und Tutorials, wo eine Filter-Funktion mit HTML, CSS und JS umgesetzt wird.
