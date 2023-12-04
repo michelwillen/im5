@@ -126,14 +126,11 @@ attachFilterButtonListeners();
 function filterItems() {
   const filters = document.querySelectorAll('.filter');
   const activeFilters = Array.from(filters).filter(f => f.classList.contains('active'));
-  console.log('Active Filters:', activeFilters);
 
   portfolio.querySelectorAll('.item').forEach(item => {
       const isVisible = activeFilters.every(filter => {
           const category = filter.getAttribute('data-category');
           const filterValue = filter.getAttribute('data-filter');
-          console.log('Category:', category);
-          console.log('Filter Value:', filterValue);
           return item.getAttribute(`data-${category}`) === filterValue;
       });
 
